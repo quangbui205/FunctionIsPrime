@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    main()
+    function isPrime(N)
+    {
+        if (N<2) return false;
+        for (i=2;i<=Math.sqrt(N);i++)
+        {
+            if( N%i==0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    function main()
+    {
+        let a = +prompt("Nhap vao 1 so nguyen bat ky: ");
+        if (isPrime(a))
+        {
+            alert(a + " la so nguyen to.");
+        }
+        else
+        {
+            alert(a + " Khong la so nguyen to.");
+        }
+    }
+</script>
+</body>
+</html>
